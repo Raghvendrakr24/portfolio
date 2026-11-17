@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raghav | Modern Developer Portfolio</title>
+  
+  <!-- Modern Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       🔥 PURE CSS THEME SWITCH (Zero JavaScript!)
+       💡 TIP: This hidden checkbox changes CSS variables when toggled.
+       ========================================================================= -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        Raghav<span class="dot">.</span>
+      </a>
+
+      <div class="nav-right">
+        <!-- Navigation menu links -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+        </ul>
+
+        <!-- Pure CSS Light / Dark Mode Toggle Button -->
+        <label for="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         💡 Features: Floating Profile Card, Ambient Lighting, Pulsing Pill
+         ======================================================================= -->
+    <section class="hero container" id="home">
+      <div class="ambient-glow"></div>
+
+      <div class="hero-content">
+        <!-- Pulsing Status Pill -->
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Available for projects &amp; learning</span>
+        </div>
+
+        <h1 class="hero-title">
+          Building the web with <span class="gradient-text">clean code</span> &amp; modern design.
+        </h1>
+
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Raghav</strong>. A passionate web developer exploring the power of pure 
+          semantic HTML and modern CSS. I build fast, responsive, and aesthetic user interfaces.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <span class="arrow">&darr;</span>
+          </a>
+          <a href="#contact" class="btn btn-glass">
+            <span>Contact Me</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual with Pure CSS Floating Animation -->
+      <div class="hero-visual">
+        <div class="card-glow"></div>
+        <div class="avatar-card floating-card">
+          <!-- 💡 TIP: Replace emoji with your photo: <img src="profile.jpg" class="avatar-img"> -->
+          <div class="avatar-emoji">👨‍💻</div>
+          <div class="avatar-details">
+            <h3>Raghav</h3>
+            <p>Frontend Explorer</p>
+          </div>
+          <div class="tag-row">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">Pure CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. ABOUT SECTION (Modern Bento Grid Layout)
+         ======================================================================= -->
+    <section class="section container" id="about">
+      <div class="section-intro">
+        <span class="eyebrow">Get to know me</span>
+        <h2 class="section-heading">About Me</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento Card 1: Main Story -->
+        <div class="bento-card bento-wide">
+          <span class="card-icon">🚀</span>
+          <h3>My Philosophy</h3>
+          <p>
+            I believe that mastering the fundamental building blocks—<strong>HTML and CSS</strong>—is the 
+            single best way to become a great developer.
+          </p>
+          <p>
+            Instead of relying on heavy libraries, I focus on clean markup, modern CSS layouts 
+            (Flexbox &amp; Grid), performance, and accessibility.
+          </p>
+        </div>
+
+        <!-- Bento Card 2: Quick Highlights -->
+        <div class="bento-card">
+          <span class="card-icon">📍</span>
+          <h3>Location</h3>
+          <p class="bento-highlight">India</p>
+          <p class="bento-subtext">Open to remote collaborations</p>
+        </div>
+
+        <!-- Bento Card 3: What I'm Learning -->
+        <div class="bento-card">
+          <span class="card-icon">📚</span>
+          <h3>Currently Exploring</h3>
+          <p class="bento-highlight">Pure CSS Magic</p>
+          <p class="bento-subtext">Animations, variables &amp; interactivity</p>
+        </div>
+
+        <!-- Bento Card 4: Interests -->
+        <div class="bento-card bento-wide">
+          <span class="card-icon">⚡</span>
+          <h3>What Drives Me</h3>
+          <p>
+            Clean typography, fluid layouts, accessible design, and pushing the boundaries of what 
+            is possible with zero JavaScript dependencies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SKILLS SECTION
+         ======================================================================= -->
+    <section class="section container" id="skills">
+      <div class="section-intro">
+        <span class="eyebrow">My Toolbox</span>
+        <h2 class="section-heading">Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">📄</div>
+          <div class="skill-meta">
+            <h4>Semantic HTML5</h4>
+            <p>Structure, accessibility, modern forms, metadata</p>
+          </div>
+        </div>
+
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">🎨</div>
+          <div class="skill-meta">
+            <h4>Modern CSS3</h4>
+            <p>Flexbox, Grid, CSS Variables, keyframe animations</p>
+          </div>
+        </div>
+
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">📱</div>
+          <div class="skill-meta">
+            <h4>Responsive Design</h4>
+            <p>Fluid mobile-first layouts with media queries</p>
+          </div>
+        </div>
+
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">🔮</div>
+          <div class="skill-meta">
+            <h4>No-JS Interactivity</h4>
+            <p>State toggles, accordions, modals &amp; transitions</p>
+          </div>
+        </div>
+
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">📦</div>
+          <div class="skill-meta">
+            <h4>Git &amp; GitHub</h4>
+            <p>Version control and publishing open-source code</p>
+          </div>
+        </div>
+
+        <div class="skill-tile">
+          <div class="skill-icon-wrapper">✨</div>
+          <div class="skill-meta">
+            <h4>UI / UX Aesthetics</h4>
+            <p>Spacing, contrast, glassmorphism &amp; micro-interactions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. PROJECTS SECTION
+         ======================================================================= -->
+    <section class="section container" id="projects">
+      <div class="section-intro">
+        <span class="eyebrow">Portfolio Works</span>
+        <h2 class="section-heading">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb thumb-indigo">
+            <span class="project-category">Portfolio</span>
+            <div class="thumb-illustration">&lt;pure-css /&gt;</div>
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">Modern CSS</span>
+              <span class="tag">Theme Toggle</span>
+            </div>
+            <h3>Pure CSS Portfolio</h3>
+            <p>
+              A fully featured, responsive personal website with light/dark theme switching, 
+              interactive accordions, and animations with 0% JavaScript.
+            </p>
+            <div class="project-footer">
+              <a href="#home" class="project-link">View Live &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumb thumb-cyan">
+            <span class="project-category">Landing Page</span>
+            <div class="thumb-illustration">Product Showcase</div>
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag">Flexbox</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+            <h3>SaaS Landing Page</h3>
+            <p>
+              A sleek dark-mode product showcase featuring pricing tables, interactive buttons, 
+              and smooth responsive layout transitions.
+            </p>
+            <div class="project-footer">
+              <a href="#" class="project-link">In Progress &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-thumb thumb-rose">
+            <span class="project-category">Layout</span>
+            <div class="thumb-illustration">Editorial &amp; Blog</div>
+          </div>
+          <div class="project-body">
+            <div class="tags">
+              <span class="tag">Typography</span>
+              <span class="tag">Accessibility</span>
+            </div>
+            <h3>Clean Blog Template</h3>
+            <p>
+              A distraction-free reading experience crafted with a strong focus on readability, line spacing, 
+              and elegant typography.
+            </p>
+            <div class="project-footer">
+              <a href="#" class="project-link">In Progress &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         🔥 6. INTERACTIVE FAQ SECTION (Pure HTML & CSS Accordion)
+         💡 TIP: Uses native <details> and <summary> tags. Click them to expand!
+         ======================================================================= -->
+    <section class="section container" id="faq">
+      <div class="section-intro">
+        <span class="eyebrow">Common Questions</span>
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <details class="faq-card" open>
+          <summary class="faq-header">
+            <span>Why did you build this with only HTML and CSS?</span>
+            <span class="faq-icon">&plus;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Starting with only HTML and CSS builds an unshakeable understanding of the web's foundations. 
+              Modern CSS is capable of layout systems, responsive designs, theme toggles, and smooth 
+              animations all without running heavy JavaScript.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 2 -->
+        <details class="faq-card">
+          <summary class="faq-header">
+            <span>How does the theme toggle work with no JavaScript?</span>
+            <span class="faq-icon">&plus;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              It uses the power of modern CSS! A hidden checkbox at the top of the HTML document is linked 
+              to the sun/moon button. When clicked, CSS detects <code>:has(#theme-toggle:checked)</code> 
+              and immediately swaps the color variables for the whole page.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 3 -->
+        <details class="faq-card">
+          <summary class="faq-header">
+            <span>Are you available for freelance projects or internships?</span>
+            <span class="faq-icon">&plus;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Yes! I am always excited to collaborate on new web projects, contribute to open-source, 
+              or learn from senior developers on a growing team.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 4 -->
+        <details class="faq-card">
+          <summary class="faq-header">
+            <span>What technologies will you learn next?</span>
+            <span class="faq-icon">&plus;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>
+              After solidifying pure HTML &amp; CSS, I plan to dive into modern JavaScript (ES6+), 
+              working with APIs, and creating interactive web applications.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CONTACT SECTION
+         ======================================================================= -->
+    <section class="section container" id="contact">
+      <div class="contact-box">
+        <div class="contact-content">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-heading">Let's create something together.</h2>
+          <p class="contact-desc">
+            Have a question, feedback on my website, or want to collaborate? 
+            Feel free to send a message or connect through my social links.
+          </p>
+
+          <div class="direct-links">
+            <a href="mailto:your.email@example.com" class="direct-link-item">
+              <span class="link-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <span>your.email@example.com</span>
+              </div>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="direct-link-item">
+              <span class="link-icon">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/yourusername</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="direct-link-item">
+              <span class="link-icon">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/yourusername</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent placeholder! You can link this to Formspree or EmailJS later.');">
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Alex Morgan" required>
+          </div>
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="alex@example.com" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Hi Raghav, I really liked your website..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <span class="arrow">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       8. FOOTER
+       ======================================================================= -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Raghav. Crafted with pure HTML &amp; CSS.</p>
+      <a href="#home" class="to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
